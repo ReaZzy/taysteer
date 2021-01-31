@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/taysteer/static/css/main.38abf6b5.chunk.css",
-    "main.js": "/taysteer/static/js/main.25033032.chunk.js",
-    "main.js.map": "/taysteer/static/js/main.25033032.chunk.js.map",
+    "main.css": "/taysteer/static/css/main.4086730e.chunk.css",
+    "main.js": "/taysteer/static/js/main.368fac24.chunk.js",
+    "main.js.map": "/taysteer/static/js/main.368fac24.chunk.js.map",
     "runtime-main.js": "/taysteer/static/js/runtime-main.fa5481e3.js",
     "runtime-main.js.map": "/taysteer/static/js/runtime-main.fa5481e3.js.map",
-    "static/js/2.5c7f02f4.chunk.js": "/taysteer/static/js/2.5c7f02f4.chunk.js",
-    "static/js/2.5c7f02f4.chunk.js.map": "/taysteer/static/js/2.5c7f02f4.chunk.js.map",
+    "static/js/2.2501a20b.chunk.js": "/taysteer/static/js/2.2501a20b.chunk.js",
+    "static/js/2.2501a20b.chunk.js.map": "/taysteer/static/js/2.2501a20b.chunk.js.map",
     "static/js/3.362a8c1c.chunk.js": "/taysteer/static/js/3.362a8c1c.chunk.js",
     "static/js/3.362a8c1c.chunk.js.map": "/taysteer/static/js/3.362a8c1c.chunk.js.map",
     "index.html": "/taysteer/index.html",
-    "static/css/main.38abf6b5.chunk.css.map": "/taysteer/static/css/main.38abf6b5.chunk.css.map",
-    "static/js/2.5c7f02f4.chunk.js.LICENSE.txt": "/taysteer/static/js/2.5c7f02f4.chunk.js.LICENSE.txt",
+    "static/css/main.4086730e.chunk.css.map": "/taysteer/static/css/main.4086730e.chunk.css.map",
+    "static/js/2.2501a20b.chunk.js.LICENSE.txt": "/taysteer/static/js/2.2501a20b.chunk.js.LICENSE.txt",
+    "static/media/bookmark.15b46192.svg": "/taysteer/static/media/bookmark.15b46192.svg",
+    "static/media/clock.67daedf5.svg": "/taysteer/static/media/clock.67daedf5.svg",
     "static/media/search (1).bd8c3858.svg": "/taysteer/static/media/search (1).bd8c3858.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.fa5481e3.js",
-    "static/js/2.5c7f02f4.chunk.js",
-    "static/css/main.38abf6b5.chunk.css",
-    "static/js/main.25033032.chunk.js"
+    "static/js/2.2501a20b.chunk.js",
+    "static/css/main.4086730e.chunk.css",
+    "static/js/main.368fac24.chunk.js"
   ]
 }

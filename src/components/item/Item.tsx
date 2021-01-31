@@ -7,7 +7,7 @@ import saveSvg from "../../media/svg/img/bookmark.svg";
 export const Item:React.FC<{}> = () => {
     return (
         <div className={s.card}>
-             <div><img className={s.img} src={"https://lh3.googleusercontent.com/proxy/_o25MtfLTupLQ83rbbIFMIXr8CfDDRbAa2e2_NeHcEIZkOm2MhTt5m_y33jDvvo0iA0QlQy8WljrSLRtaBBjH5iJJsdNLLXapr3dGuIluu_lDswRak0N4PI9PHT1cu31A7ebm8M"} alt={"recipe"}/></div>
+             <div><img className={s.img} src={"https://pngimg.com/uploads/pizza/pizza_PNG44095.png"} alt={"recipe"}/></div>
             <div>
                 <div className={s.title}>BaBaasBBaasBaasaasBaasas</div>
                 <object type="image/svg+xml" data={saveSvg} className={s.saveSvg}>Save</object>

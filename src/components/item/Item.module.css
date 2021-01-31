@@ -1,23 +1,32 @@
 .card {
     display: flex;
-    height: calc(35px + (153 - 35) * ((100vw - 320px)/ (1440 - 320)));
+    align-items: center;
+    height: calc(35px + (180 - 35) * ((100vw - 320px)/ (1440 - 320)));
     background: rgba(248, 248, 248, 0.7);
     box-shadow: 0px 0px 30px rgba(14, 17, 17, 0.2);
     backdrop-filter: blur( 20.0px );
     -webkit-backdrop-filter: blur( 20.0px );
     border-radius: 10px;
+    margin-bottom: calc(5px + (20 - 5) * ((100vw - 320px)/ (1440 - 320)));
 }
 
 .img {
+    margin-right: calc(2px + (5 - 2) * ((100vw - 320px)/ (1440 - 320)));
     border-radius: 50%;
     width: calc(35px + (153 - 35) * ((100vw - 320px)/ (1440 - 320)));
     height: calc(35px + (153 - 35) * ((100vw - 320px)/ (1440 - 320)));
 }
 .title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 13ch;
     color: #0E1111;
     font-size: calc(12px + (37 - 12) * ((100vw - 320px)/ (1440 - 320)));
 }
 .time {
+    overflow: hidden;
+    max-height: 2ch;
+    max-width: 22ch;
     margin-top: -5px;
     color:#0E1111;
     font-size: calc(9px + (16 - 9) * ((100vw - 320px)/ (1440 - 320)));
@@ -28,15 +37,16 @@
     color:#0E1111;
     font-size: calc(6px + (17 - 6) * ((100vw - 320px)/ (1440 - 320)));
     overflow: hidden;
-    max-height: 8ch;
+    max-height: 7ch;
 }
 
 .readMore{
+
     margin-right: 5px;
     background-color: transparent;
     border: none;
     font-family: "Yanone Kaffeesatz", sans-serif;
-    font-size: calc(16px + (17 - 16) * ((100vw - 320px)/ (1440 - 320)));
+    font-size: calc(16px + (22 - 16) * ((100vw - 320px)/ (1440 - 320)));
     float: right;
     outline: none;
 }
@@ -45,7 +55,7 @@
     border-radius: 10px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
     .card{
         z-index: 10;
         margin-top: calc(5px + (10 - 5) * ((100vw - 320px)/ (1440 - 320)));

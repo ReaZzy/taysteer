@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/taysteer/static/css/main.4086730e.chunk.css",
-    "main.js": "/taysteer/static/js/main.9057fb3e.chunk.js",
-    "main.js.map": "/taysteer/static/js/main.9057fb3e.chunk.js.map",
+    "main.js": "/taysteer/static/js/main.7ba8c1b9.chunk.js",
+    "main.js.map": "/taysteer/static/js/main.7ba8c1b9.chunk.js.map",
     "runtime-main.js": "/taysteer/static/js/runtime-main.fa5481e3.js",
     "runtime-main.js.map": "/taysteer/static/js/runtime-main.fa5481e3.js.map",
     "static/js/2.2501a20b.chunk.js": "/taysteer/static/js/2.2501a20b.chunk.js",
@@ -20,6 +20,6 @@
     "static/js/runtime-main.fa5481e3.js",
     "static/js/2.2501a20b.chunk.js",
     "static/css/main.4086730e.chunk.css",
-    "static/js/main.9057fb3e.chunk.js"
+    "static/js/main.7ba8c1b9.chunk.js"
   ]
 }

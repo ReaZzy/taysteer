@@ -11,7 +11,6 @@ export const Navbar: React.FC<{}> = () => {
     return (
         <nav className={s.nav}>
             <div><NavLink exact to="/" className={s.link} activeClassName={s.active}>Homepage</NavLink></div>
-            <div><NavLink to="/recipes" className={s.link} activeClassName={s.active}>Recipes</NavLink></div>
             <div><NavLink to="/top" className={s.link} activeClassName={s.active}>Top chefs</NavLink></div>
             <div><NavLink to="/profile" className={s.link} activeClassName={s.active}>Profile</NavLink></div>
             <div className={s.ava}>

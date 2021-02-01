@@ -16,7 +16,7 @@ export const Item:React.FC<{}> = () => {
                 <div className={s.description}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda commodi
                     consequuntur deserunt dignissimos dolore doloribus eaque, maiores nam non quasi, ratione
                     suscipit vel, veniam voluptate? Dolorem ex libero voluptatem.</div>
-                <button className={s.readMore}>Read more</button>
+                <button className={s.readMore}><b>Read more</b></button>
             </div>
         </div>
     )

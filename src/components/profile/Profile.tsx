@@ -2,8 +2,6 @@ import s from "./profile.module.css"
 import React from "react";
 import { Item } from "../item/Item";
 import cupSvg from "../../media/svg/img/trophy.svg";
-import stars from "../../media/svg/img/star.svg"
-import cloche from "../../media/svg/img/crystal-cloche.svg"
 import { Stats } from "./Stats";
 
 const Profile:React.FC<{}> = () => {

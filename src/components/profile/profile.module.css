@@ -68,9 +68,12 @@
     font-family: "Yanone Kaffeesatz", sans-serif;
     font-size: calc(14px + (25 - 14) * ((100vw - 320px)/ (1440 - 320)));
 }
-
+.box{
+    margin-top: calc(3px + (5 - 3) * ((100vw - 320px)/ (1440 - 320)));
+    height: 100%;
+}
 .starBox{
-    position: relative;
+    display: flex;
     padding: 0 15px 0 15px;
     font-size: calc(10px + (20 - 10) * ((100vw - 320px)/ (1440 - 320)));
     overflow: hidden;
@@ -79,22 +82,17 @@
     background: rgb(248, 248, 248);
     box-shadow: 0 0 30px rgba(14, 17, 17, 0.2);
     -webkit-backdrop-filter: blur( 20px );
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
     z-index: 10;
-}
-.starBox div{
-    margin-right: calc(15px + (30 - 15) * ((100vw - 320px)/ (1440 - 320)));
+    justify-content: center;
+    align-items: center;
+
 }
 .starSvg{
-    position: absolute;
-    width: calc(11px + (20 - 11) * ((100vw - 320px)/ (1440 - 320)));
-    height: calc(11px + (20 - 11) * ((100vw - 320px)/ (1440 - 320)));
+    margin-right: 5px;
+    width: calc(10px + (19 - 10) * ((100vw - 320px)/ (1440 - 320)));
+    height: calc(10px + (19 - 10) * ((100vw - 320px)/ (1440 - 320)));
 }
 .clocheSvg{
-    position: absolute;
     margin-left: 2px;
     width: calc(13px + (22 - 13) * ((100vw - 320px)/ (1440 - 320)));
     height: calc(13px + (22 - 13) * ((100vw - 320px)/ (1440 - 320)));

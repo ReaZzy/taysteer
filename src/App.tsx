@@ -6,13 +6,18 @@ import { Suspense } from 'react';
 import { Preloader } from './components/Preloader/Preloader';
 
 const Profile = React.lazy(()=> import("./components/profile/Profile"))
+const Login = React.lazy(()=> import("./components/auth/login/Login"))
+const Top = React.lazy(()=> import("./components/top/Top"))
 
 const App:React.FC<{}> = () => {
   return (
     <div className="App">
       <Navbar/>
+      <Preloader/>
       <Switch>
-          <Route path={"/profile"} render={()=><Suspense fallback={<Preloader/>}><Profile/></Suspense>}/>
+          <Route path={"/login"} render={()=><Suspense fallback={<Preloader/>}><Login/></Suspense>}/>
+          <Route path={"/profile/:id?"} render={()=><Suspense fallback={<Preloader/>}><Profile/></Suspense>}/>
+          <Route path={"/top"} render={()=><Suspense fallback={<Preloader/>}><Top/></Suspense>}/>
           <Route exact path={"/"} render={()=><Homepage/>}/>
       </Switch>
     </div>

@@ -10,10 +10,9 @@
     font-size: calc(12px + (20 - 12) * ((100vw - 320px)/ (1440 - 320)));
     text-align: center;
 }
-.infoContent{
-    text-align: center;
-}
+
 .avatar{
+    margin-bottom: calc(-10px + (-1 - 10) * ((100vw - 320px)/ (1440 - 320)));
     width: calc(200px + (400 - 200) * ((100vw - 320px)/ (1440 - 320)));
     height: calc(200px + (400 - 200) * ((100vw - 320px)/ (1440 - 320)));
     border-radius: 50%;
@@ -21,26 +20,86 @@
     background-color: blue;
     display:inline-block;
     vertical-align:middle;
+    position: relative;
+    z-index: -1;
 }
 .best{
     width: 70vw;
 }
+.top{
+    font-weight: lighter;
+}
 .info p {
-    width: 60%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 8;
+    text-align: center;
+    width: 75%;
+}
+.nickName{
+    margin-right: 5px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    text-align: center;
 }
 .name{
     text-align: center;
+    align-items: center;
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 .bestTitle{
     font-family: "Yanone Kaffeesatz", sans-serif;
     font-size: calc(14px + (25 - 14) * ((100vw - 320px)/ (1440 - 320)));;
 }
+.cupSvg{
+    position: absolute;
+    margin-left: 4px;
+    width: calc(13px + (22 - 13) * ((100vw - 320px)/ (1440 - 320)));
+    height: calc(13px + (22 - 13) * ((100vw - 320px)/ (1440 - 320)));;
+}
 .back{
     font-family: "Yanone Kaffeesatz", sans-serif;
-    font-size: calc(14px + (25 - 14) * ((100vw - 320px)/ (1440 - 320)));;
+    font-size: calc(14px + (25 - 14) * ((100vw - 320px)/ (1440 - 320)));
 }
+
+.starBox{
+    position: relative;
+    padding: 0 15px 0 15px;
+    font-size: calc(10px + (20 - 10) * ((100vw - 320px)/ (1440 - 320)));
+    overflow: hidden;
+    height: calc(20px + (35 - 20) * ((100vw - 320px)/ (1440 - 320)));
+    border-radius: 10px;
+    background: rgb(248, 248, 248);
+    box-shadow: 0 0 30px rgba(14, 17, 17, 0.2);
+    -webkit-backdrop-filter: blur( 20px );
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+.starBox div{
+    margin-right: calc(15px + (30 - 15) * ((100vw - 320px)/ (1440 - 320)));
+}
+.starSvg{
+    position: absolute;
+    width: calc(11px + (20 - 11) * ((100vw - 320px)/ (1440 - 320)));
+    height: calc(11px + (20 - 11) * ((100vw - 320px)/ (1440 - 320)));
+}
+.clocheSvg{
+    position: absolute;
+    margin-left: 2px;
+    width: calc(13px + (22 - 13) * ((100vw - 320px)/ (1440 - 320)));
+    height: calc(13px + (22 - 13) * ((100vw - 320px)/ (1440 - 320)));
+}
+
 @media (max-width: 650px) {
     .content{
         flex-direction: column;
@@ -50,5 +109,8 @@
     }
     .info{
         width: 100%;
+    }
+    .starBox{
+        padding: 0 3px 0 3px;
     }
 }

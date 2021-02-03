@@ -1,6 +1,10 @@
 import s from "./profile.module.css"
 import React from "react";
 import { Item } from "../item/Item";
+import cupSvg from "../../media/svg/img/trophy.svg";
+import stars from "../../media/svg/img/star.svg"
+import cloche from "../../media/svg/img/crystal-cloche.svg"
+import { Stats } from "./Stats";
 
 const Profile:React.FC<{}> = () => {
     return (
@@ -9,23 +13,16 @@ const Profile:React.FC<{}> = () => {
             <div className={s.content}>
                 <div className={s.info}>
                     <div className={s.name}>
-                        <div>Fedor Greedann</div>
-                        <div> Top 100 (_)</div>
+                        <div className={s.nickName}><b>Fedor GreeFedor</b></div>
+                        <div className={s.top}> Top 10<object type="image/svg+xml" data={cupSvg} className={s.cupSvg}>Cup</object></div>
                     </div>
-                    <div>42 y.o.</div>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam consequuntur eum ipsa laboriosam numquam praesentium quaerat quam, quidem rem ullam. Cum facere illo laudantium magni maiores, sequi sit soluta tenetur?</p>
-                    <div className={s.imgCover}>
-                        <img className={s.avatar} alt={"avatar"} src={"https://htn.com.au/wp-content/uploads/2018/02/PP18-DIPLOMA-IN-PROFESSIONAL-CHEF.jpg"}/>
-                    </div>
+                    <div className={s.top+" " +s.age}>32y.o.</div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing
+                        elit. Accusamus ad alias aspernatur culpa ducimus eum
+                        illum obcaecati porro quos reiciendis! A beatae dolor expedita itaque molestias omnis placeat veritatis vero?</p>
 
-                    <div>
-                        <div>
-                            1500
-                        </div>
-                        <div>
-                            200
-                        </div>
-                    </div>
+                    <img className={s.avatar} alt={"avatar"} src={"https://m.media-amazon.com/images/M/MV5BMjM2OTkyNTY3N15BMl5BanBnXkFtZTgwNzgzNDc2NjE@._V1_CR132,0,761,428_AL_UY268_CR82,0,477,268_AL_.jpg"}/>
+                    <Stats/>
                 </div>
 
                 <div className={s.best}>

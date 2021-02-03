@@ -1,5 +1,5 @@
 import React from "react";
-import {NavLink} from "react-router-dom"
+import {NavLink, useLocation} from "react-router-dom"
 import s from "./Navbar.module.css"
 
 const plusSvg =
@@ -8,6 +8,9 @@ const plusSvg =
     </svg>
 
 export const Navbar: React.FC<{}> = () => {
+    const location = useLocation()
+    if(["/login","/signup"].includes(location.pathname)) return null
+    console.log(location)
     return (
         <nav className={s.nav}>
             <div><NavLink exact to="/" className={s.link} activeClassName={s.active}>Homepage</NavLink></div>

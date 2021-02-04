@@ -2,7 +2,6 @@
     display: flex;
 }
 .info{
-    width: 60%;
     margin-right: 10px;
     display: flex;
     flex-direction: column;
@@ -24,6 +23,7 @@
     z-index: -1;
 }
 .best{
+    width:50%;
     height: 100%;
     display: flex;
     flex-wrap: wrap;

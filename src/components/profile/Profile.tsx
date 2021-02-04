@@ -24,10 +24,11 @@ const Profile:React.FC<{}> = () => {
                 </div>
 
                 <div className={s.best}>
-                    <div className={s.bestTitle}><b>Best recipes</b></div>
-                    <Item/>
-                    <Item/>
-                    <Item/>
+                        <b className={s.bestTitle}>Best recipes</b>
+                        <Item/>
+                        <Item/>
+                        <Item/>
+                        <Item/>
                 </div>
             </div>
         </div>

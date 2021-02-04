@@ -6,7 +6,7 @@ export const Item:React.FC<{}> = () => {
     return (
         <div className={s.card}>
              <div><img className={s.img} src={"https://pngimg.com/uploads/pizza/pizza_PNG44095.png"} alt={"recipe"}/></div>
-            <div>
+            <div className={s.cardInfo}>
                 <div className={s.title}>BaBaasBBaasBaasaasBaasas</div>
                 <BsFillBookmarkFill className={s.saveSvg}/>
                 {/*<BsFillBookmarkFill className={s.saveSvg} color="#FFC107"/>*/}

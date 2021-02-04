@@ -23,6 +23,11 @@
     position: relative;
     z-index: -1;
 }
+.best{
+    height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
 .top{
     font-weight: lighter;
 }

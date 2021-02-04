@@ -1,5 +1,4 @@
 .card {
-    position: relative;
     width: 63.3vw;
     overflow: hidden;
     cursor: pointer;
@@ -36,6 +35,7 @@
     font-size: calc(9px + (16 - 9) * ((100vw - 320px)/ (1440 - 320)));
 }
 .description{
+    max-width: 95%;
     color:#0E1111;
     font-size: calc(6px + (17 - 6) * ((100vw - 320px)/ (1440 - 320)));
     overflow: hidden;

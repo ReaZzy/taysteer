@@ -1,13 +1,12 @@
 import React from "react";
 import s from "./profile.module.css";
-import stars from "../../media/svg/img/star.svg";
-import cloche from "../../media/svg/img/crystal-cloche.svg";
+import {BsStarFill, MdRestaurantMenu} from "react-icons/all";
 
 export const Stats:React.FC<{}> = () => {
     return(
         <div className={s.starBox}>
-                1500 <object type="image/svg+xml" data={stars} className={s.starBoxSvg + " " + s.starSvg}>Star</object>
-                200 <object type="image/svg+xml" data={cloche} className={s.starBoxSvg+ " " + s.clocheSvg}>Cloche</object>
+                1500 <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                200  <MdRestaurantMenu className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
         </div>
     )
 }

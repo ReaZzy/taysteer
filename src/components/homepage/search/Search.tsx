@@ -1,49 +1,57 @@
 import React from "react";
 import s from "./Search.module.css"
-import searchSvg from "./../../../media/svg/img/search (1).svg"
+import {SearchInput} from "./SearchInput";
+import {Field, Form, Formik} from "formik";
 
 export const Search:React.FC<{}> = () =>{
+    const handleSubmit = (data:any) =>{
+        console.log(data)
+    }
     return (
         <div>
-            <img className={s.bcImg} src={"https://previews.123rf.com/images/tbralnina/tbralnina1812/tbralnina181200062/117179599-pepperoni-pizza-top-view-.jpg"} alt={""}/>
-        <section className={s.filters}>
-            <form className={s.form}>
-                <div className={s.search}>
-                    <object type="image/svg+xml" data={searchSvg} className={s.searchSvg}>Search</object>
-                    <input/>
-                </div>
-                <select className={s.select} id="cars" name="cars">
-                    <option value="">Category</option>
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                </select>
-                <select className={s.select} id="cars" name="cars">
-                    <option value="">Category</option>
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                </select>
-                <select className={s.select} id="cars" name="cars">
-                    <option value="">Category</option>
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                </select>
-                <select className={s.select} id="cars" name="cars">
-                    <option value="">Category</option>
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    <option value="fiat">Fiat</option>
-                    <option value="audi">Audi</option>
-                </select>
+            <img className={s.bcImg+" noselect"} src={"https://previews.123rf.com/images/tbralnina/tbralnina1812/tbralnina181200062/117179599-pepperoni-pizza-top-view-.jpg"} alt={""}/>
+            <section className={s.filters}>
+                <Formik onSubmit={handleSubmit} initialValues={{term:""}}>
+                    <Form className={s.form}>
+                            <SearchInput/>
+                            <Field
+                                component="select"
+                                id="location1"
+                                name="location1"
+                                className={s.select}
+                            >
+                                <option value="NY">New York</option>
+                                <option value="SF">San Francisco</option>
+                                <option value="CH">Chicago</option>
+                                <option value="OTHER">Other</option>
+                            </Field>
+                            <Field
+                                component="select"
+                                id="location"
+                                name="location"
+                                className={s.select}
+                            >
+                                <option value="NY">New York</option>
+                                <option value="SF">San Francisco</option>
+                                <option value="CH">Chicago</option>
+                                <option value="OTHER">Other</option>
+                            </Field>
+                            <Field
+                                component="select"
+                                id="location2"
+                                name="location2"
+                                className={s.select}
+                            >
+                                <option value="NY">New York</option>
+                                <option value="SF">San Francisco</option>
+                                <option value="CH">Chicago</option>
+                                <option value="OTHER">Other</option>
+                            </Field>
+                            <button className={s.submit} type={"submit"}>Search</button>
+                    </Form>
+                </Formik>
 
-                <button className={s.submit} type={"submit"}>Search</button>
-            </form>
-        </section>
+            </section>
         </div>
     )
 }

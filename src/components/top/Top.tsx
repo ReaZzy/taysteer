@@ -3,7 +3,7 @@ import React from "react";
 import s from "./top.module.css"
 import {Person} from "./person/Person";
 import {TopThree} from "./TopThree";
-import {NavLink} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 const Top:React.FC<{}> = () => {
     return(
         <div className={s.content}>
@@ -31,6 +31,7 @@ const Top:React.FC<{}> = () => {
             <Person/>
             <Person/>
             <Person/>
+            <Link to={"/top/users/"} className={s.viewMore}><div>View more</div></Link>
         </div>
     )
 }

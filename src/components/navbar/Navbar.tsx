@@ -10,9 +10,8 @@ const plusSvg =
 export const Navbar: React.FC<{}> = () => {
     const location = useLocation()
     if(["/login","/signup"].includes(location.pathname)) return null
-    console.log(location)
     return (
-        <nav className={s.nav}>
+        <nav className={s.nav+" noselect"}>
             <div><NavLink exact to="/" className={s.link} activeClassName={s.active}>Homepage</NavLink></div>
             <div><NavLink to="/top" className={s.link} activeClassName={s.active}>Top chefs</NavLink></div>
             <div><NavLink to="/profile" className={s.link} activeClassName={s.active}>Profile</NavLink></div>

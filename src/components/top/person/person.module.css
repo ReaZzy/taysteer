@@ -1,0 +1,51 @@
+.row {
+    margin-top: 10px;
+    height: 8vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-self: center;
+    width: 80%;
+    background-color: #F8F8F8;
+    box-shadow: 0 0 30px rgba(14, 17, 17, 0.2);
+    border-radius: 10px;
+}
+.name{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    max-width: 30%;
+    font-size: calc(10px + (22 - 10) * ((100vw - 320px)/ (1440 - 320)));
+}
+.avatar{
+    max-width: 500px;
+    max-height: 500px;
+    border-radius: 50%;
+    width: calc(60px + (70 - 60) * ((100vw - 320px)/ (1440 - 320)));
+    height: calc(60px + (70 - 60) * ((100vw - 320px)/ (1440 - 320)));
+
+}
+.row button{
+    margin-right: 10px;
+    box-shadow: 0 0 30px rgba(14, 17, 17, 0.2);
+    cursor: pointer;
+    align-self: center;
+    font-size: calc(13px + (22 - 13) * ((100vw - 320px)/ (1440 - 320)));
+    border-radius: 10px;
+    width: 15%;
+    background-color: #F8F8F8;
+    outline: none;
+    border: none;
+}
+.row button:hover{
+    background-color: #ffc107;
+    color: #F8F8F8;
+}
+@media (max-width: 600px){
+    .row{
+        width: 100%;
+    }
+}

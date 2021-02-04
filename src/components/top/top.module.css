@@ -43,7 +43,26 @@
     color: #F8F8F8;
     background-color: #ffc107;
 }
-
+.viewMore{
+    text-decoration: none;
+    color: #0E1111;
+    margin-top: 15px;
+    height: 3vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 80%;
+    background-color: #F8F8F8;
+    box-shadow: 0 0 30px rgba(14, 17, 17, 0.2);
+    border-radius: 10px;
+    font-size: calc(12px + (18 - 12) * ((100vw - 320px)/ (1440 - 320)));
+}
+.viewMore:hover {
+    color: #F8F8F8;
+    background-color: #ffc107;
+}
 .content{
     justify-content: center;
     display: flex;

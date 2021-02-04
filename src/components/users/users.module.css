@@ -1,0 +1,24 @@
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 80%;
+}
+.content{
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.search{
+    width: 80%;
+}
+@media (max-width: 600px) {
+    .block{
+        width: 100%;
+    }
+    .search{
+        width: 100%;
+    }
+}

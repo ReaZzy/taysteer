@@ -23,9 +23,6 @@
     position: relative;
     z-index: -1;
 }
-.best{
-    width: 70vw;
-}
 .top{
     font-weight: lighter;
 }
@@ -98,7 +95,7 @@
     height: calc(13px + (22 - 13) * ((100vw - 320px)/ (1440 - 320)));
 }
 
-@media (max-width: 650px) {
+@media (max-width: 700px) {
     .content{
         flex-direction: column;
     }

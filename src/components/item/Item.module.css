@@ -1,4 +1,5 @@
 .card {
+    position: relative;
     width: 63.3vw;
     overflow: hidden;
     cursor: pointer;

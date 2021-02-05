@@ -1,25 +1,27 @@
 import React from "react";
-import s from "./login.module.css"
+import {Field, Form, Formik} from "formik";
+import s from "../login/login.module.css";
 import {
     AiFillFacebook,
     AiFillGoogleCircle,
     AiFillTwitterCircle,
     FaUserAlt,
-    RiLockPasswordFill,
+    MdEmail,
+    RiLockPasswordFill
 } from "react-icons/all";
-import {Field, Form, Formik} from "formik";
 
-const Login: React.FC<{}> = () => {
-    const handleSubmit = (data:any) =>{
+const SignUp:React.FC<{}> = () => {
+    const  handleSubmit = (data:any) => {
         console.log(data)
     }
-    return (
+
+    return(
         <div className={s.content}>
             <div className={s.contentForm}>
                 <div className={s.contentPadding}>
-                    <Formik initialValues={{userName:"",password:"",rememberMe:""}} onSubmit={handleSubmit}>
+                    <Formik initialValues={{userName:"",password:"", email:"", passwordRepeat:""}} onSubmit={handleSubmit}>
                         <Form>
-                            <div className={s.title}>Login</div>
+                            <div className={s.title}>Sign up</div>
                             <div className={s.form}>
                                 <div className={s.userName}>
                                     <label>Username</label>
@@ -29,25 +31,29 @@ const Login: React.FC<{}> = () => {
                                     </div>
                                 </div>
                                 <div className={s.password}>
+                                    <label>Email</label>
+                                    <div className={s.inputForm}>
+                                        <MdEmail className={s.searchSvg}/>
+                                        <Field component={"input"} name={"email"} type={"email"}/>
+                                    </div>
+                                </div>
+                                <div className={s.password}>
                                     <label>Password</label>
                                     <div className={s.inputForm}>
                                         <RiLockPasswordFill className={s.searchSvg}/>
                                         <Field component={"input"} name={"password"} type={"password"}/>
                                     </div>
                                 </div>
-                                <div className={s.row}>
-                                    <div className={s.box}>
-                                        <label className="checkBox">
-                                            <Field component={"input"} name={"rememberMe"} type={"checkbox"}/>
-                                            <span className="checkmark"/>
-                                        </label>
-                                        <div>Remember me</div>
+                                <div className={s.password}>
+                                    <label>Repeat your password</label>
+                                    <div className={s.inputForm}>
+                                        <RiLockPasswordFill className={s.searchSvg}/>
+                                        <Field component={"input"} name={"passwordRepeat"} type={"password"}/>
                                     </div>
-                                    <div>Forget password?</div>
                                 </div>
                                 <button className={s.buttonLogin} type={"submit"}>Login</button>
                                 <div>
-                                    <div className={s.orLogin}>Or login with</div>
+                                    <div className={s.orLogin}>Or sign up with</div>
                                     <div className={s.socialWidth}>
                                         <div className={s.social}>
                                             <AiFillFacebook className={s.socialItem}/>
@@ -58,7 +64,7 @@ const Login: React.FC<{}> = () => {
 
                                 </div>
                                 <div className={s.dontHave}>
-                                    Don`t have acoount? Signup now
+                                    Already a member? Login
                                 </div>
                             </div>
                         </Form>
@@ -68,5 +74,4 @@ const Login: React.FC<{}> = () => {
         </div>
     )
 }
-
-export default Login
+export default SignUp

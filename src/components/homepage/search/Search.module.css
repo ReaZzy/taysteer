@@ -76,6 +76,7 @@
     background-color: #FFC107;
 }
 .bcImg{
+    object-fit: cover;
     position: absolute;
     width: calc(240px + (560 - 240) * ((100vw - 320px)/ (1440 - 320)));
     overflow: hidden;

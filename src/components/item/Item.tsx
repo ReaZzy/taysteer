@@ -1,10 +1,16 @@
 import React from "react";
 import s from "./Item.module.css"
 import {BsFillBookmarkFill, FiClock} from "react-icons/all";
+import { useHistory } from "react-router-dom";
 
 export const Item:React.FC<{}> = () => {
+    const history = useHistory()
+    const handleClick = (id:number) =>{
+        history.push(`/recipe/${id}`)
+    }
+
     return (
-        <div className={s.card}>
+        <div className={s.card} onClick={()=>{handleClick(1)}}>
              <div><img className={s.img} src={"https://pngimg.com/uploads/pizza/pizza_PNG44095.png"} alt={"recipe"}/></div>
             <div className={s.cardInfo}>
                 <div className={s.title}>BaBaasBBaasBaasaasBaasas</div>

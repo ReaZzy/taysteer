@@ -21,6 +21,7 @@
     font-size: calc(10px + (22 - 10) * ((100vw - 320px)/ (1440 - 320)));
 }
 .avatar{
+    object-fit: cover;
     max-width: 500px;
     max-height: 500px;
     border-radius: 50%;

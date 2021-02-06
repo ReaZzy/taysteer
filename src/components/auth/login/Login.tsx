@@ -38,7 +38,7 @@ const Login: React.FC<{}> = () => {
                                 <div className={s.row}>
                                     <div className={s.box}>
                                         <label className="checkBox">
-                                            <Field component={"input"} name={"rememberMe"} type={"checkbox"}/>
+                                            <Field type="checkbox" name={"rememberMe"}/>
                                             <span className="checkmark"/>
                                         </label>
                                         <div>Remember me</div>

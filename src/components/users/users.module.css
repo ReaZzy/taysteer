@@ -14,8 +14,55 @@
 .search{
     width: 80%;
 }
+.paginationItem.activeLi{
+    background-color: #ffc107;
+}
+.paginationItem{
+    cursor: pointer;
+    text-align: center;
+    overflow: hidden;
+    background-color: #F8F8F8;
+    border:1px solid #ffc107;
+    width: 10%;
+    height: 100%;
+    border-radius: 10px;
+    margin: 5px;
+}
+.pageA{
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Old versions of Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none;
+    color: #0E1111;
+    text-decoration: none;
+}
+.activeA{
+    width: 100%;
+    height: 100%;
+    background-color: #ffc107;
+    color: #F8F8F8;
+}
+.pagination{
+    justify-content: center;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    align-items: center;
+    font-size: calc(12px + (20 - 12) * ((100vw - 320px)/ (1440 - 320)));
+}
+.paginationItem:hover{
+    background-color: #ffc107;
+    color:#F8F8F8 ;
+}
 @media (max-width: 600px) {
     .block{
+        width: 100%;
+    }
+    .paginationItem{
         width: 100%;
     }
     .search{

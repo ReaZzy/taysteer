@@ -12,6 +12,7 @@
     width: calc(30vw + (15 - 30) * ((100vw - 320px)/ (1440 - 320)));
 }
 .avatar{
+    object-fit: cover;
     margin: 0 auto 10px auto;
     max-width: 500px;
     max-height: 500px;

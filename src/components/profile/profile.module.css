@@ -13,10 +13,11 @@
 .avatar{
     margin-bottom: calc(-10px + (-1 - 10) * ((100vw - 320px)/ (1440 - 320)));
     width: calc(200px + (400 - 200) * ((100vw - 320px)/ (1440 - 320)));
-    height: calc(200px + (400 - 200) * ((100vw - 320px)/ (1440 - 320)));
+    height:calc(200px + (400 - 200) * ((100vw - 320px)/ (1440 - 320)));;
+    object-fit: cover;
     border-radius: 50%;
     overflow: hidden;
-    background-color: blue;
+    background-color: transparent;
     display:inline-block;
     vertical-align:middle;
     position: relative;

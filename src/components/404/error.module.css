@@ -1,0 +1,35 @@
+.error{
+    margin-right: calc(10px + (92 + 20) * ((100vw - 320px)/ (1440 - 320)));
+}
+.errorContent{
+    height: 60vh;
+    align-items: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    font-size: calc(80px + (180 - 80) * ((100vw - 320px)/ (1440 - 320)));
+}
+.errorText{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: calc(20px + (35 - 20) * ((100vw - 320px)/ (1440 - 320)));
+}
+.buttonLogin{
+    align-self: center;
+    padding: 5px 30px 5px 30px;
+    cursor: pointer;
+    margin: 0 auto;
+    background: linear-gradient(270deg, #FFC107 28.82%, #FFC107 97.35%);
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    color: #F8F8F8;
+    font-size: calc(16px + (22 - 16) * ((100vw - 320px)/ (1440 - 320)));
+    font-family: "Yanone Kaffeesatz", sans-serif;
+}
+.friedEggSvg{
+    width: calc(100px + (210 - 100) * ((100vw - 320px)/ (1440 - 320)));
+    height: calc(100px + (210 - 100) * ((100vw - 320px)/ (1440 - 320)));;
+}

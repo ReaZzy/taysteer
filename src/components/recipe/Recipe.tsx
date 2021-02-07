@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./recipe.module.css"
-import {BsStarFill} from "react-icons/all";
+import {BsStarFill, FiClock} from "react-icons/all";
 
 const Recipe: React.FC<{}> = () => {
     return (
@@ -8,15 +8,22 @@ const Recipe: React.FC<{}> = () => {
             <div className={s.top}>
                 <div className={s.img}>
                     <img className={s.bcImg + " noselect"}
-                         src={"https://previews.123rf.com/images/tbralnina/tbralnina1812/tbralnina181200062/117179599-pepperoni-pizza-top-view-.jpg"} alt={""}/>'
+                         src={"https://previews.123rf.com/images/tbralnina/tbralnina1812/tbralnina181200062/117179599-pepperoni-pizza-top-view-.jpg"}
+                         alt={""}/>'
                 </div>
                 <div className={s.topInfo}>
                     <div className={s.back}>← Back</div>
-                    <div className={s.title}><b>Papperoni</b><BsStarFill className={s.starBoxSvg + " " + s.starSvg}
-                                                                         color={"#FFC107"}/><BsStarFill
-                        className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/><BsStarFill
-                        className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/><BsStarFill
-                        className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/></div>
+                    <div className={s.title}><b>Papperoni</b>
+                        <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                        <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                        <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                        <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                    </div>
+
+                    <div className={s.rowInfo}>
+                        <div className={s.author}><b>Author:</b> LoreLoremDePa r</div>
+                        <div className={s.time}><b>pizza 15-30</b><FiClock className={s.clockSvg}/></div>
+                    </div>
                     <p className={s.description}>LoreLorem Lorem Ipsum is simply dummy text of the printinreLorem Lorem
                         Ipsum is simply dummy text of the printing and typesetting industry.reLorem Lorem Ipsum is
                         simply dummy text of the printing and typesetting industry.reLorem Lorem Ipsum ireLorem Lorem
@@ -160,6 +167,51 @@ const Recipe: React.FC<{}> = () => {
                                     ipsnsectetur adipisicing elit. Beatae culpa, deleniti ducimus explicabo ipsam iure
                                     labore, necessitatibus nemo nostrum officiis quaerat repellendus tempora totam.
                                     Cupiditate error ex ullam velit voluptatem!</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div className={s.comments}>
+                <div className={s.commentForm}>
+                    <img className={s.commentImg}
+                         src={"https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg"} alt={"avatar"}/>
+                    <textarea/>
+                    <button>Send</button>
+                </div>
+                <div className={s.commentList}>
+                    <div className={s.comment}>
+                        <img className={s.commentImg}
+                             src={"https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg"} alt={"avatar"}/>
+                        <div className={s.commentBox}>
+                            <div className={s.commentName}>
+                                <div>
+                                    <b className={s.boxName}>Maxim Nebela 123</b>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                </div>
+                                <div className={s.commentDate}>
+                                    11.04.15 22:15
+                                </div>
+                            </div>
+
+                            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae blanditiis culpa
+                                debitis dolore dolorum enim esse et facere hic ipsa, iste iure maiores pariatur quidem
+                                repellat repellendus. DolorLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                                beatae blanditiis culpa debitis dolLorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Ad beatae blanditiis culpa debitis dolLorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Ad beatae blanditiis culpa debitis dolLorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Ad beatae blanditiis culpa debitis dolLorem ipsum dolor
+                                sit amet, consectetur adipisicing elit. Ad beatae blanditiis culpa debitis dolLorem
+                                ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae blanditiis culpa debitis
+                                dolLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae blanditiis culpa
+                                debitis dolLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae
+                                blanditiis culpa debitis dolLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                                beatae blanditiis culpa debitis dole, quas.
                             </div>
                         </div>
                     </div>

@@ -23,7 +23,6 @@ const Users:React.FC<{}> = () => {
                 <Person/>
                 <Person/>
                 <Person/>
-                <Person/>
                 <Pagination
                     activePage={1}
                     itemsCountPerPage={10}

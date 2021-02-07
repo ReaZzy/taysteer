@@ -69,6 +69,24 @@
     width: calc(10px + (14 - 10) * ((100vw - 320px)/ (1440 - 320)));
     margin-left: 2px;
 }
+.author{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 2px solid #0E1111;
+}
+.rowInfo{
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    font-size: calc(9px + (16 - 9) * ((100vw - 320px)/ (1440 - 320)));
+}
 .saveSvg{
     position: absolute;
     left: 95%;

@@ -8,7 +8,7 @@ export const Search:React.FC<{}> = () =>{
         console.log(data)
     }
     return (
-        <div>
+        <div className={s.leftSide}>
             <img className={s.bcImg+" noselect"} src={"https://previews.123rf.com/images/tbralnina/tbralnina1812/tbralnina181200062/117179599-pepperoni-pizza-top-view-.jpg"} alt={""}/>
             <section className={s.filters}>
                 <Formik onSubmit={handleSubmit} initialValues={{term:""}}>

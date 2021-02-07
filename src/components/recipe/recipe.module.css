@@ -10,7 +10,7 @@
     left: calc(-150px + (90 + -160) * ((100vw - 320px)/ (1440 - 320)));
     top: calc(40px + (100 - 40) * ((100vw - 320px)/ (1440 - 320)));
 }
-.top{
+.top, .comment, .stepInfo, .commentName{
     display: flex;
 }
 .img{
@@ -64,9 +64,23 @@
     color: #0E1111;
     font-size: calc(13px + (18 - 13) * ((100vw - 320px)/ (1440 - 320)));
 }
+.boxName{
+    margin-right: 5px;
+}
 .list{
     margin-left: -20px;
     font-size: calc(14px + (22 - 14) * ((100vw - 320px)/ (1440 - 320)));
+}
+.commentName{
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    background-color: #F8F8F8;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom : 1px solid #0E1111;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
 }
 .note{
     overflow: hidden;
@@ -85,6 +99,75 @@
     flex-direction: column;
     justify-content: center;
 }
+.time {
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    max-height: 2ch;
+    max-width: 22ch;
+    color:#0E1111;
+}
+.author{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    margin-right: 5px;
+    padding-right: 5px;
+    border-right: 2px solid #0E1111;
+    max-width: calc(150px + (350 - 150) * ((100vw - 320px)/ (1440 - 320)));
+}
+.rowInfo{
+    width: 100%;
+    flex-wrap: wrap;
+    display: flex;
+    text-align: center;
+    font-size: calc(12px + (18 - 12) * ((100vw - 320px)/ (1440 - 320)));
+}
+.commentForm{
+    align-items: center;
+    display: flex;
+}
+.comments{
+    margin-bottom: 10vh;
+}
+.comment{
+    align-items: center;
+}
+.commentBox{
+    overflow-y: scroll;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 6;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: calc(10px + (18 - 10) * ((100vw - 320px)/ (1440 - 320)));
+    border: 1px solid #0E1111;
+    padding: 0 5px 5px 5px;
+    margin-left: calc(5px + (10 - 5) * ((100vw - 320px)/ (1440 - 320)));
+    width: 50%;
+}
+.commentList{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+.comment{
+    margin-bottom: -10px;
+}
+.commentImg{
+    object-fit: cover;
+    border-radius: 50%;
+    width: calc(35px + (80 - 35) * ((100vw - 320px)/ (1440 - 320)));
+    height: calc(35px + (80 - 35) * ((100vw - 320px)/ (1440 - 320)));
+}
+.clockSvg{
+    width: calc(14px + (18 - 14) * ((100vw - 320px)/ (1440 - 320)));
+    margin-left: 2px;
+}
 .stepTitle{
     margin-right: calc(10px + (92 + 20) * ((100vw - 320px)/ (1440 - 320)));
     color: #0E1111;
@@ -98,9 +181,30 @@
     display: flex;
     flex-direction: column;
 }
-.stepInfo{
-    display: flex;
+.commentForm textarea{
+    outline: none;
+    padding: 5px;
+    font-size: calc(10px + (18 - 10) * ((100vw - 320px)/ (1440 - 320)));
+    margin: 0 10px 0 10px;
+    border-radius: 10px;
+    resize: none;
+    height: calc(30px + (60 - 30) * ((100vw - 320px)/ (1440 - 320)));
+    width: 60%;
 }
+.commentForm button {
+    font-size: calc(12px + (18 - 12) * ((100vw - 320px)/ (1440 - 320)));
+    background-color: transparent;
+    outline: none;
+    border: 2px solid #ffc107;
+    border-radius: 10px;
+    height: calc(30px + (60 - 30) * ((100vw - 320px)/ (1440 - 320)));
+    width: calc(50px + (90 - 50) * ((100vw - 320px)/ (1440 - 320)));
+}
+.commentForm button:hover {
+    background-color: #ffc107;
+    color: #F8F8F8;
+}
+
 .stepInfoMain{
     margin-left: 10px;
 }
@@ -108,11 +212,11 @@
     object-fit: cover;
     max-height: calc(160px + (280 - 160) * ((100vw - 320px)/ (1440 - 320)));
     width: 100%;
-    max-width: 600px;
+    max-width: calc(300px + (500 - 300) * ((100vw - 320px)/ (1440 - 320)));
     height: auto;
 }
 @media (max-width: 600px){
-    .note{
+    .note, .commentBox{
         width: 100%;
     }
 }

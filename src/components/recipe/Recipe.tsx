@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./recipe.module.css"
-import {BsStarFill, FiClock} from "react-icons/all";
+import {BsStarFill, FaRegStar, FiClock, ImReply} from "react-icons/all";
 
 const Recipe: React.FC<{}> = () => {
     return (
@@ -172,7 +172,13 @@ const Recipe: React.FC<{}> = () => {
                     </div>
                 </div>
             </div>
-
+            <div className={s.rate}><b>Rate this recipe</b>
+                <FaRegStar className={s.starSvgOutline} color={"#FFC107"}/>
+                <FaRegStar className={s.starSvgOutline} color={"#FFC107"}/>
+                <FaRegStar className={s.starSvgOutline} color={"#FFC107"}/>
+                <FaRegStar className={s.starSvgOutline} color={"#FFC107"}/>
+                <FaRegStar className={s.starSvgOutline} color={"#FFC107"}/>
+            </div>
             <div className={s.comments}>
                 <div className={s.commentForm}>
                     <img className={s.commentImg}
@@ -186,19 +192,20 @@ const Recipe: React.FC<{}> = () => {
                              src={"https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg"} alt={"avatar"}/>
                         <div className={s.commentBox}>
                             <div className={s.commentName}>
-                                <div>
+                                <div className={s.stars}>
                                     <b className={s.boxName}>Maxim Nebela 123</b>
-                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
-                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
-                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
-                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
-                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <div>
+                                        <BsStarFill className={s.starSvg} color={"#ffc107"}/>
+                                        <BsStarFill className={s.starSvg} color={"#FFC107"}/>
+                                        <BsStarFill className={s.starSvg} color={"#FFC107"}/>
+                                        <BsStarFill className={s.starSvg} color={"#FFC107"}/>
+                                        <BsStarFill className={s.starSvg} color={"#FFC107"}/>
+                                    </div>
                                 </div>
                                 <div className={s.commentDate}>
                                     11.04.15 22:15
                                 </div>
                             </div>
-
                             <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae blanditiis culpa
                                 debitis dolore dolorum enim esse et facere hic ipsa, iste iure maiores pariatur quidem
                                 repellat repellendus. DolorLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
@@ -213,6 +220,108 @@ const Recipe: React.FC<{}> = () => {
                                 blanditiis culpa debitis dolLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
                                 beatae blanditiis culpa debitis dole, quas.
                             </div>
+                        </div>
+                        <div>
+                            <ImReply className={s.replySvg+ " "+ s.stepInfoMain}/>
+                        </div>
+                    </div>
+                    <div className={s.comment}>
+                        <img className={s.commentImg}
+                             src={"https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg"} alt={"avatar"}/>
+                        <div className={s.commentBox}>
+                            <div className={s.commentName}>
+                                <div className={s.stars}>
+                                    <b className={s.boxName}>Maxim Nebela 123</b>
+                                    <div>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    </div>
+                                </div>
+                                <div className={s.commentDate}>
+                                    11.04.15 22:15
+                                </div>
+                            </div>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae blanditiis culpa
+                                debitis dolore dolorum enim esse et facere hic ipsa, iste iure maiores pariatur quidem
+                                repellat repellendus. DolorLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                                beatae blanditiis culpa debitis dolLorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Ad beatae blanditiis culpa debitis dolLorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Ad beatae blanditiis culpa debitis dolLorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Ad beatae blanditiis culpa debitis dolLorem ipsum dolor
+                                sit amet, consectetur adipisicing elit. Ad beatae blanditiis culpa debitis dolLorem
+                                ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae blanditiis culpa debitis
+                                dolLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae blanditiis culpa
+                                debitis dolLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae
+                                blanditiis culpa debitis dolLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                                beatae blanditiis culpa debitis dole, quas.
+                            </div>
+                        </div>
+                        <div>
+                            <ImReply className={s.replySvg+ " "+ s.stepInfoMain}/>
+                        </div>
+                    </div>
+                    <div className={s.comment + " " + s.reply}>
+                        <img className={s.commentImg}
+                             src={"https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg"} alt={"avatar"}/>
+                        <div className={s.commentBox}>
+                            <div className={s.commentName}>
+                                <div className={s.stars}>
+                                    <b className={s.boxName}>Maxim Nebela 123</b>
+                                    <div>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    </div>
+                                </div>
+                                <div className={s.commentDate}>
+                                    11.04.15 22:15
+                                </div>
+                            </div>
+                            <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae blanditiis culpa
+                                debitis dolore dolorum enim esse et facere hic ipsa, iste iure maiores pariatur quidem
+                                repellat repellendus. DolorLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                                beatae blanditiis culpa debitis dolLorem ipsum dolor sit amet, consectetur adipisicing
+                                elit. Ad beatae blanditiis culpa debitis dolLorem ipsum dolor sit amet, consectetur
+                                adipisicing elit. Ad beatae blanditiis culpa debitis dolLorem ipsum dolor sit amet,
+                                consectetur adipisicing elit. Ad beatae blanditiis culpa debitis dolLorem ipsum dolor
+                                sit amet, consectetur adipisicing elit. Ad beatae blanditiis culpa debitis dolLorem
+                                ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae blanditiis culpa debitis
+                                dolLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae blanditiis culpa
+                                debitis dolLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad beatae
+                                blanditiis culpa debitis dolLorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
+                                beatae blanditiis culpa debitis dole, quas.
+                            </div>
+                        </div>
+                    </div>
+                    <div className={s.comment}>
+                        <img className={s.commentImg}
+                             src={"https://www.codeproject.com/KB/GDI-plus/ImageProcessing2/img.jpg"} alt={"avatar"}/>
+                        <div className={s.commentBox}>
+                            <div className={s.commentName}>
+                                <div className={s.stars}>
+                                    <b className={s.boxName}>Maxim Nebela 123</b>
+                                    <div>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                                    </div>
+                                </div>
+                                <div className={s.commentDate}>
+                                    11.04.15 22:15
+                                </div>
+                            </div>
+                            <div>Lorem ipsum
+                            </div>
+                        </div>
+                        <div>
+                            <ImReply className={s.replySvg+ " "+ s.stepInfoMain}/>
                         </div>
                     </div>
                 </div>

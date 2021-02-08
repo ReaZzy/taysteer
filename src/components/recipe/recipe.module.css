@@ -10,8 +10,12 @@
     left: calc(-150px + (90 + -160) * ((100vw - 320px)/ (1440 - 320)));
     top: calc(40px + (100 - 40) * ((100vw - 320px)/ (1440 - 320)));
 }
-.top, .comment, .stepInfo, .commentName{
+.top, .comment, .stepInfo, .commentName, .rate, .stars{
     display: flex;
+}
+.stars{
+    flex-wrap: wrap;
+    align-items: center;
 }
 .img{
     width: 25%;
@@ -40,11 +44,19 @@
     width: calc(10px + (19 - 10) * ((100vw - 320px)/ (1440 - 320)));
     height: calc(10px + (19 - 10) * ((100vw - 320px)/ (1440 - 320)));
 }
+.replySvg{
+    width: calc(10px + (19 - 10) * ((100vw - 320px)/ (1440 - 320)));
+    height: calc(10px + (19 - 10) * ((100vw - 320px)/ (1440 - 320)));
+}
 .topInfo{
     margin-left: 10px;
     width: 75%;
 }
-
+.starSvgOutline{
+    margin-right: 5px;
+    width: calc(13px + (22 - 13) * ((100vw - 320px)/ (1440 - 320)));
+    height: calc(13px + (22 - 13) * ((100vw - 320px)/ (1440 - 320)));
+}
 .info{
     flex-wrap: wrap;
     display: flex;
@@ -118,6 +130,14 @@
     border-right: 2px solid #0E1111;
     max-width: calc(150px + (350 - 150) * ((100vw - 320px)/ (1440 - 320)));
 }
+.rate{
+    align-items: center;
+    font-size: calc(18px + (26 - 18) * ((100vw - 320px)/ (1440 - 320)));
+    margin-top: 100px;
+}
+.rate b{
+    margin-right: 10px;
+}
 .rowInfo{
     width: 100%;
     flex-wrap: wrap;
@@ -130,13 +150,18 @@
     display: flex;
 }
 .comments{
+    margin-top: 20px;
     margin-bottom: 10vh;
 }
 .comment{
+    margin-top: 20px;
     align-items: center;
 }
+.reply{
+    margin-left: calc(45px + (90 - 45) * ((100vw - 320px)/ (1440 - 320)));;
+}
 .commentBox{
-    overflow-y: scroll;
+    overflow-y: auto;
     text-overflow: ellipsis;
     display: -webkit-box;
     -webkit-box-orient: vertical;
@@ -144,7 +169,7 @@
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
     border-bottom-left-radius: 10px;
-    font-size: calc(10px + (18 - 10) * ((100vw - 320px)/ (1440 - 320)));
+    font-size: calc(12px + (18 - 12) * ((100vw - 320px)/ (1440 - 320)));
     border: 1px solid #0E1111;
     padding: 0 5px 5px 5px;
     margin-left: calc(5px + (10 - 5) * ((100vw - 320px)/ (1440 - 320)));
@@ -204,7 +229,6 @@
     background-color: #ffc107;
     color: #F8F8F8;
 }
-
 .stepInfoMain{
     margin-left: 10px;
 }

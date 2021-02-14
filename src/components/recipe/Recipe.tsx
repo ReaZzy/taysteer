@@ -1,6 +1,7 @@
 import React from "react";
 import s from "./recipe.module.css"
-import {BsStarFill, FaRegStar, FiClock, ImReply} from "react-icons/all";
+import {BsBookmark, BsStarFill, FaRegStar, FiClock, ImReply} from "react-icons/all";
+import {Back} from "../Back/Back";
 
 const Recipe: React.FC<{}> = () => {
     return (
@@ -12,13 +13,18 @@ const Recipe: React.FC<{}> = () => {
                          alt={""}/>'
                 </div>
                 <div className={s.topInfo}>
-                    <div className={s.back}>← Back</div>
-                    <div className={s.title}><b>Papperoni</b>
+                    <Back/>
+                    <div className={s.title}>
+                        <div>
+                        <b>Papperoni</b>
                         <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
                         <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
                         <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
                         <BsStarFill className={s.starBoxSvg + " " + s.starSvg} color={"#FFC107"}/>
+                        </div>
+                        <div><BsBookmark className={s.saveSvg}/></div>
                     </div>
+
 
                     <div className={s.rowInfo}>
                         <div className={s.author}><b>Author:</b> LoreLoremDePa r</div>

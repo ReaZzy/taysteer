@@ -1,6 +1,6 @@
 import React from "react";
 import s from "./Item.module.css"
-import {BsFillBookmarkFill, FiClock} from "react-icons/all";
+import {BsBookmark, FiClock} from "react-icons/all";
 import { useHistory } from "react-router-dom";
 
 export const Item:React.FC<{}> = () => {
@@ -13,8 +13,10 @@ export const Item:React.FC<{}> = () => {
         <div className={s.card} onClick={()=>{handleClick(1)}}>
              <div><img className={s.img} src={"https://pngimg.com/uploads/pizza/pizza_PNG44095.png"} alt={"recipe"}/></div>
             <div className={s.cardInfo}>
-                <div className={s.title}>BaBaasBBaasBaasaasBaasas</div>
-                <BsFillBookmarkFill className={s.saveSvg}/>
+                <div className={s.topInfo}>
+                    <div className={s.title}>BaBaasBBaasBaasaasBaasas</div>
+                    <div><BsBookmark className={s.saveSvg}/></div>
+                </div>
                 {/*<BsFillBookmarkFill className={s.saveSvg} color="#FFC107"/>*/}
                 <div className={s.rowInfo}>
                     <div className={s.author}><b>Author:</b> LoreLoremDePa r</div>
@@ -23,7 +25,6 @@ export const Item:React.FC<{}> = () => {
                 <div className={s.description}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur assumenda commodi
                     consequuntur deserunt dignissimos dolore doloribus eaque, maiores nam non quasi, ratione
                     suscipit vel, veniam voluptate? Dolorem ex libero voluptatem.</div>
-                <button className={s.readMore}><b>Read more</b></button>
             </div>
         </div>
     )

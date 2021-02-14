@@ -12,6 +12,10 @@ const Users = React.lazy(() => import("./components/users/Users"))
 const SignUp = React.lazy(() => import("./components/auth/signup/SignUp"))
 const Error = React.lazy(() => import("./components/404/Error"))
 const Recipe = React.lazy(() => import("./components/recipe/Recipe"))
+const Featured = React.lazy(()=> import("./components/Featured/Featured"))
+const EditProfile = React.lazy(()=> import("./components/EditProfile/EditProfile"))
+const Add = React.lazy(()=> import("./components/Add/Add"))
+
 const App: React.FC<{}> = () => {
     return (
         <div className="App">
@@ -20,12 +24,14 @@ const App: React.FC<{}> = () => {
             <div className="content">
                 <Switch>
                     <Route path={"/login"} render={() => <Suspense fallback={<Preloader/>}><Login/></Suspense>}/>
+                    <Route path={"/add"} render={() => <Suspense fallback={<Preloader/>}><Add/></Suspense>}/>
+                    <Route path={"/edit"} render={() => <Suspense fallback={<Preloader/>}><EditProfile/></Suspense>}/>
                     <Route path={"/signup"} render={() => <Suspense fallback={<Preloader/>}><SignUp/></Suspense>}/>
-                    <Route path={"/profile/:id?"}
-                           render={() => <Suspense fallback={<Preloader/>}><Profile/></Suspense>}/>
+                    <Route path={"/profile/:id?"} render={() => <Suspense fallback={<Preloader/>}><Profile/></Suspense>}/>
                     <Route path={"/top/users"} render={() => <Suspense fallback={<Preloader/>}><Users/></Suspense>}/>
                     <Route path={"/recipe/:id"} render={() => <Suspense fallback={<Preloader/>}><Recipe/></Suspense>}/>
                     <Route path={"/top"} render={() => <Suspense fallback={<Preloader/>}><Top/></Suspense>}/>
+                    <Route path={"/featured"} render={() => <Suspense fallback={<Preloader/>}><Featured/></Suspense>}/>
                     <Route exact path={"/"} render={() => <Homepage/>}/>
                     <Route exact path={"*"} render={() => <Suspense fallback={<Preloader/>}><Error/></Suspense>}/>
                 </Switch>

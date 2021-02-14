@@ -1,0 +1,148 @@
+.back{
+    font-family: "Yanone Kaffeesatz", sans-serif;
+    font-size: calc(16px + (25 - 16) * ((100vw - 320px)/ (1440 - 320)));
+    cursor: pointer;
+}
+.avatar{
+    width: calc(200px + (400 - 200) * ((100vw - 320px)/ (1440 - 320)));
+    height:calc(200px + (400 - 200) * ((100vw - 320px)/ (1440 - 320)));;
+    object-fit: cover;
+    border-radius: 50%;
+    overflow: hidden;
+    background-color: transparent;
+    position: absolute;
+}
+.content{
+    display: flex;
+}
+
+.input{
+    cursor: pointer;
+    display: flex;
+    color: #F8F8F8;
+    font-size: calc(16px + (25 - 16) * ((100vw - 320px)/ (1440 - 320)));
+    align-items: center;
+    justify-content: center;
+    width: calc(200px + (400 - 200) * ((100vw - 320px)/ (1440 - 320)));
+    height:calc(200px + (400 - 200) * ((100vw - 320px)/ (1440 - 320)));;
+    border-radius: 50%;
+    position: absolute;
+    background: rgba(29, 106, 154, 0.72);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .2s, visibility .2s;
+}
+.input::before{
+    content: "Upload Photo";
+}
+.imgWrap {
+    width: calc(200px + (400 - 200) * ((100vw - 320px)/ (1440 - 320)));
+    height:calc(200px + (400 - 200) * ((100vw - 320px)/ (1440 - 320)));
+}
+
+.imgWrap:hover .input {
+    visibility: visible;
+    opacity: 1;
+}
+.content, .details, .password, .buttons{
+    display: flex;
+}
+.details, .password{
+    flex-direction: column;
+}
+
+.details summary{
+    transition: 0.2s;
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 0 auto;
+    outline: none;
+    border: 1px solid #0E1111;
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px)/ (1440 - 320)));
+}
+.details summary:hover{
+    border: 1px solid #ffc107;
+    background-color: #ffc107;
+    color: #F8F8F8;
+}
+.details{
+    margin: 10px;
+}
+
+.rightSide input{
+    font-size: calc(12px + (18 - 12) * ((100vw - 320px)/ (1440 - 320)));
+    outline: none;
+    border: 1px solid #0E1111;
+    border-radius: 5px;
+    padding: calc(3px + (6 - 3) * ((100vw - 320px)/ (1440 - 320)));
+}
+.rightSide label{
+    margin-top: 10px;
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px)/ (1440 - 320)));
+}
+.title{
+    margin-bottom: 10px;
+    font-size: calc(16px + (25 - 16) * ((100vw - 320px)/ (1440 - 320)));
+}
+.rightSide{
+    margin-left: calc(15px + (25 - 15) * ((100vw - 320px)/ (1440 - 320)));
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.age{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.age label {
+    margin-right: 5px;
+}
+.age input{
+    width: 50px;
+}
+.step{
+    width: 100%;
+}
+.cancel{
+    margin-right: 10px;
+    background-color: #848585;
+    color: #F8F8F8;
+}
+.cancel:hover{
+    background-color: #ff5f5f;
+}
+.save:hover{
+    background-color: #4bd758;
+}
+.save{
+    background-color: #ffc107;
+    color: #F8F8F8;
+}
+.buttons button{
+    font-size: calc(14px + (20 - 14) * ((100vw - 320px)/ (1440 - 320)));
+    cursor: pointer;
+    transition: 0.2s;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    width: 100%;
+}
+
+@media screen and (max-width: 700px){
+    .imgWrap{
+        margin: 0 auto;
+    }
+    .leftSide{
+        width: 100%;
+    }
+    .rightSide{
+        width: 100%;
+        margin-left: 0;
+    }
+    .content{
+        flex-direction: column;
+    }
+}

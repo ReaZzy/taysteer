@@ -24,6 +24,7 @@
 .title{
     display: flex;
     align-items: center;
+    justify-content: space-between;
     color: #0E1111;
     font-size: calc(18px + (37 - 18) * ((100vw - 320px)/ (1440 - 320)));
 }
